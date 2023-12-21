@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenuFragment">
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.shootthemall.fragment.MainMenuFragment"
+        android:label="Shoot Them All"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_shootingFragment"
+            app:destination="@id/shootingFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_leaderboardsFragment"
+            app:destination="@id/leaderboardsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shootingFragment"
+        android:name="com.example.shootthemall.fragment.ShootingFragment"
+        android:label="Game"
+        tools:layout="@layout/fragment_shooting" />
+    <fragment
+        android:id="@+id/leaderboardsFragment"
+        android:name="com.example.shootthemall.fragment.LeaderboardsFragment"
+        android:label="Leaderboards"
+        tools:layout="@layout/fragment_leaderboards" />
+</navigation>

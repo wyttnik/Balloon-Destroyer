@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/arFragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/hp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/hp"/>
+
+    <ImageView
+        android:id="@+id/hp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/hp"/>
+
+    <ImageView
+        android:id="@+id/hp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:src="@drawable/hp"/>
+
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:text="1312313"
+        tools:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/text_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:text="01:23"
+        tools:textColor="@color/black"
+        android:layout_marginTop="50dp"/>
+
+    <View
+        android:layout_width="72dp"
+        android:layout_height="4dp"
+        android:background="#7a000000"
+        android:layout_centerInParent="true" />
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="72dp"
+        android:background="#7a000000"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/button_shoot"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Shoot"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Begin Game"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
